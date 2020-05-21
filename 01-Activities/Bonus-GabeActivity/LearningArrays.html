@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorite Bands</title>
+</head>
+<body>
+    <script>
+    // Define an array for favorite movies
+        var myFavMovies = ["the lion king", "beauty and the beast", "independence day", "the land before time", "home alone"];
+
+    // Define an array of fav places 
+        var myFavePlaces = ["miami", "malibu", "paris", "hawaii", "london", "rome"];
+
+    //Prompting the user for an answer and changing it to lowercase
+        var userGuess = prompt("What is one of your favorite movies?");
+        var userGuessLower = userGuest.toLowerCase();
+
+    //If the users Answer is not in the myFavoriteMovies array alert you have not seen the movie
+        if (myFavoriteMovies.indexOf(userGuessLower) === -1) {
+            alert("No I haven't seen that one");
+        }
+
+    //else the users answer is one of the array indexes
+        else {
+            alert("Yeah I love that Movie");
+        }
+
+​
+    //Prompting the user for an answer and changing it to lowercase
+        var userFavPlaces = prompt("What is one of your favorite places to travel to?")
+        var userFavPlacesLower = userFavPlaces.toLowerCase();
+​
+    //If the users Answer is not in the myFavoritePlaces array alert you might need to visit the places
+        if(myFavoritePlaces.indexOf(userFavPlacesLower) === -1){
+            alert("I haven't been there, looks like it's time for a trip")
+    //else the users answer is one of the array indexes
+      }else{
+            alert("Yea, that's one of my favorite places too!")
+      }
+
+    </script>
+    
+
+</body>
+</html>
