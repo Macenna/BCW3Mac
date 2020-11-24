@@ -16,12 +16,13 @@
       var petType = "Tuxedo Cat";
       var petAge = 5;
       var petIsCat = true;
+        //vars have values (stored information) that can be called & manipulated into various methods
 
-      if (confirmCats) {
-        alert(petName + " " + petType + " " + petAge);
+      if (confirmCats) {  //if statement that calls the confirmCats var, which then asks the user a question w/ the confirm popup
+        alert(petName + " " + petType + " " + petAge);  //Concatenates 3/4 of the variables defined above into an alert
       }
-      else {
-        alert("You don't get my cat's information");
+      else {  //If user pushes cancel button on browser instead of confirm, the else statement is called upon
+        alert("You don't get my cat's information"); //Then, this statement pops up
       }
 
       if (petIsCat) {
@@ -31,7 +32,7 @@
         alert("My pet is not a cat");
       }
 
-      if (petAge !== 7) {
+      if (petAge !== 7) { //if petAge does not = 7, user is alerted w/ the message below
         alert("My pet is not 7 years old");
       }
 
@@ -45,15 +46,16 @@
         alert("My pet is older than 5 years old");
       }
 
-      alert("Welcome to our page " + userName);
+      alert("Welcome to our page " + userName); //Calls on the name of the variable in code but displays var's value in browser 
 
-      var catAge = prompt("How old is your cat?");
+      var catAge = prompt("How old is your cat?"); //This creates a new var w/ the value based on user input 
 
       // Won't work as expected
-      alert(catAge + 2);
+      alert(catAge + 2);  //Based on info given by user 1 prompt prior, JS concatenates the string value w/ a 2, adding a "2" to whatever string value was given by the user in the prompt above
 
       // Works as expected
-      alert(parseInt(catAge) + 2);
+      alert(parseInt(catAge) + 2);  //Based on info given in catAge prompt, the string value of the variable is turned into an integer value, then added to 2
+        //parseInt changes the catAge value from a string into an integer in order for the program to carry out a math equation rather than just a concatenation 
 
     </script>
   </body>
