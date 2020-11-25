@@ -8,9 +8,30 @@
 <body>
     <script type="text/javascript">
     
+        // Starting array 
     var myFarm = ["chickens", "pigs", "cows", "horses", "ostriches"];
 
-    
+        // for loop running through the array, console logging each index of the array 
+    for (var index = 0; index < myFarm.length; index++) {
+        console.log(myFarm[index]);
+
+        // if statement conditioning first character in each index beginning w/ a 'c' or 'o', alert w/ the message 
+        if (myFarm[index].charAt(0) === "c" || myFarm[index].charAt(0) === "o") {
+            alert("Starts with 'c' or 'o'!");
+        }
+    }
+            // myFarm[index] = all 5 values of the array, as they're looped, are checked w/ the .charAt method
+            // .charAt(0) = 1st character of each value in the array, as the loop is executed 
+            // === -> if type and value are the same as string value given, condition is met 
+                // In this case it's "c" & "o" 
+                    // if c or o is the value of index 0 for any of the array values, then the if statement can be executed 
+            
+            // || = or 
+                // In order for the if statement to be executed, the condition to be met can be 1 of 2 conditions given
+                    // The browser will alert user if either of the 2 conditions are met 
+                        // In this case, the user will recieve 3 alerts 
+            
+
 
     </script>
 </body>
