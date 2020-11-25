@@ -9,19 +9,21 @@
     <script type="text/javascript">
 
       // Here we create our prompt and confirm variables which will store user input.
-      var confirmSushi = confirm("Do you like sushi?");
+      var confirmSushi = confirm("Do you like sushi?"); // This is a yes or no question, leading to boolean answers when called upon in an if/else statement 
       var confirmGingerTea = confirm("Do you like Ginger Tea?");
-      var sushiType = prompt("What kind of sushi do you like?");
+      var sushiType = prompt("What kind of sushi do you like?"); // This is an open-ended question, resulting in a string value that is input by the user
+          // Depending on how this variable is called, the string value may have to be converted into an integer in some cases, not this one though. 
 
       // If the user likes sushi (confirmSushi === true), we run the following block of code.
+        // If the user clicks cancel then confirmSushi === false, and the first block of code (the if statement) is not executed.
       if (confirmSushi) {
-        alert("You like " + sushiType + "!");
+        alert("You like " + sushiType + "!"); // Even if user does not confirm confirmSushi, they will still be prompted to type in what kind of sushi they like 
       }
       // If the user likes ginger tea (confirmGingerTea === true), we run the following block of code.
       else if (confirmGingerTea) {
-        alert("You like ginger tea!!");
+        alert("You like ginger tea!!"); // If user clicks "cancel", they will not be alerted that they like gingerTea
       }
-      // If neither of the previous condition were true, we run the following block of code.
+      // If neither of the previous condition were true, we run the following block of code. - After being prompted to type in what kind of sushi the user likes 
       else {
         alert("You don't like sushi or ginger tea.");
       }
