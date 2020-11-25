@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity 9</title>
+</head>
+<body>
+    
+    <script type="text/javascript">
+    
+            //Asking user if they like steak
+        var steak = confirm("Do you eat steak?");
+            //Asking user birth year for second part of instructions 
+        var birthYear = prompt("What year were you born?");
+
+        if (steak === true) {
+            alert("Here is a steak sandwich!");
+        } else {
+            alert("Here is a Tofu Stir-Fry!");
+        }
+
+            // If user is born after 1999 then they are under 21 & they will get an alert, 
+                // If they are 21 or over, this message will never see the light of day
+        if (birthYear >= 1999) {
+            alert("No Sake for you!");
+        }
+
+
+    </script>
+
+</body>
+</html>
