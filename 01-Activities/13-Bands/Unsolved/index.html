@@ -15,11 +15,13 @@
         // Prompt asking user their favorite band 
     var userBand = prompt("What is your favorite band?");
 
-        // Converting users answer to lowercase 
+        // Converting user's answer to lowercase 
     var userBandLower = userBand.toLowerCase();
 
         //Check favBands array to see if it contains user's answer
-        // If the user's band is not in the array
+        // If the user's band is not in the array - checking against something 
+            // === Type & Value
+            // -1 means undefined in array
     if (favBands.indexOf(userBandLower) === -1) {
         alert("Nah. They're not as cool.");
     }
