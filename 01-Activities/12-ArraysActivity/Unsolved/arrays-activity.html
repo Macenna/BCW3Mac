@@ -13,29 +13,34 @@
       // Fill in the question marks with what the output will be.
       var animals = ["parrot", "cat", "dog"];
 
-      // 3
+      
       console.log(animals.length);
-
-      // cat
+        // 3
+      
       console.log(animals[1]);
-
-      // dog
+        // cat
+      
       console.log(animals[2]);
-
-      // parrot
+        // dog
+      
       console.log(animals[0]);
-
-      // Undefined
+        // parrot
+      
       console.log(animals[animals.length]);
-
-      // dog
+        // Undefined b/c animals.length = 3 and the index only goes up to 2.
+          // (animals[animals.length]) = Same thing as (animals[3]) (which is undefined)
+      
       console.log(animals[animals.length - 1]);
-
-      // -1
+        // dog 
+          // b/c animals.length = 3, and 3-1=2, index[2] = dog
+      
       console.log(animals.indexOf("bear"));
-
-      // 0
+        // -1
+          // indexOf comes to -1 if it can't be indexed, and consoles the actual index if there is one 
+          // There is no bear in the array so it executes as -1, just because of the indexOf method - normally this is undefined 
+      
       console.log(animals.indexOf("parrot"));
+        // 0
 
     </script>
 
