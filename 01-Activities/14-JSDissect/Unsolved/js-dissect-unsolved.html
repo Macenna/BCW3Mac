@@ -20,40 +20,50 @@
       if (confirmCats) {
         alert(petName + " " + petType + " " + petAge);
       }
-      else {
+      else {  // If user clicks cancel instead of ok, the else statement is executed 
         alert("You don't get my cat's information");
       }
 
-      if (petIsCat) {
-        alert("My pet is a cat");
+      if (petIsCat) { // This one (the 'if', not the else) will always execute b/c the var is set to true on line 18 
+        alert("My pet is a cat"); // This person's pet will always be a cat 
       }
       else {
         alert("My pet is not a cat");
       }
 
-      if (petAge !== 7) {
+      if (petAge !== 7) { // This is solely an 'if' statement, meant to be executed every single time, apparently 
         alert("My pet is not 7 years old");
       }
 
-      if (petAge === 5) {
+      if (petAge === 5) { // The 'if' statement here will always execute b/c the petAge var is set to = 5 on line 17
         alert("My pet is 5 years old");
       }
-      else if (petAge < 5) {
+      else if (petAge < 5) {  // Unless developer updates this every year, this else if block of code will never be executed 
         alert("My pet is less than 5 years old");
       }
-      else {
+      else {  // Same for this else block of code - will never execute b/c petAge var is set to = 5, hard coded, essentially 
         alert("My pet is older than 5 years old");
       }
 
       alert("Welcome to our page " + userName);
+        // The userName value is what runs to the browser, the userName value = the user input from the prompt at the top of this code (line 12)
+          // Whatever 'name' the user typed in will display to the user in this alert 
 
       var catAge = prompt("How old is your cat?");
+        // The answer to this prompt is the value of this variable 
+          // The value of this variable is a string value 
+            // b/c the prompt is a string & the developer has not yet included code to parse the string value from the prompt into an integer (like from an equation)
 
-      // Won't work as expected
+      // Won't work as expected - no math, just concatenation
       alert(catAge + 2);
+        // This concatenates a string value w/ the integer
+          // This concatenation solely adds a digit (w/ the value of 2) to the string value that the user was prompted to type in from line 52
+            // This concatenation = string + integer =/= not a math equation 
 
-      // Works as expected
+      // Works as expected - math is involved this time 
       alert(parseInt(catAge) + 2);
+        // parseInt makes the value of the variable catAge an integer 
+          // Now, the catAge variable can be added to 2 to equate to a math problem - based on the numerical value of catAge rather than the string value 
 
     </script>
   </body>
