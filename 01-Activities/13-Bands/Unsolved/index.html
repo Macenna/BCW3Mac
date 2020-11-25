@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity 13</title>
+</head>
+<body>
+    
+    <script type="text/javascript">
+    
+        // Array of my bands 
+    var favBands = ["3oh!3", "mac miller", "felly", "caye", "biskwiq"];
+
+        // Prompt asking user their favorite band 
+    var userBand = prompt("What is your favorite band?");
+
+        // Converting users answer to lowercase 
+    var userBandLower = userBand.toLowerCase();
+
+        //Check favBands array to see if it contains user's answer
+        // If the user's band is not in the array
+    if (favBands.indexOf(userBandLower) === -1) {
+        alert("Nah. They're not as cool.");
+    }
+        // If the user's band is in the array
+    else {
+        alert("Yeah! I love them!");
+    }
+
+        // An if statement that checks w/ the expectation that the user's band will not be in the favBands array
+            // Then, an else statement if the possibility of these 2 people liking the same band is not completely shot down 
+    
+    </script>
+
+</body>
+</html>
