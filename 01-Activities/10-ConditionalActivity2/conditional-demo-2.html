@@ -14,6 +14,10 @@
       else {
         alert("bye");
       }
+          // === Means equal value and equal type
+            // Boolean true is the same exact thing as boolean true so the if statement is executed and the else statement is ignored
+          // == Means equal to 
+
 
       if (false === false) {
         alert("dude");
@@ -21,38 +25,52 @@
       else {
         alert("nope");
       }
+          // 2 boolean false are equal value and type 
+            // Therefore the dude alert will execute from the if statement and the else statement will be ignored
 
-// not a string b/c the first 4 is a string ie not the same type but yes same value (===)
+
       if ("4" === 4) {
         alert("puppies");
       }
       else {
         alert("goats");
       }
+          // Not a string b/c the first 4 is a string i.e. not the same type but yes same value (===),
+              // "4" & 4 are same value, different type - the else statement will execute - conditions are not fit to run the if statement 
 
-// puppies b/c it is equal to (==)
+
       if ("4" == 4) {
         alert("puppies");
       }
       else {
         alert("goats");
       }
+        // == Means equal to
+        // "4" and 4 are equal to one another although one is a string and the other an integer   
+          // The if statement's conditions are met. Puppies will display b/c it is equal to (==)
 
-//always wants to alert itself to true - goo goo dolls
+
       if (true) {
         alert("goo goo dolls");
       }
       else {
         alert("vanilla ice");
       }
+        // Conditionals want to be met - there is no reason for this to be false b/c only given the condition of true
+          // Always wants to alert itself to true b/c it is the default boolean value - goo goo dolls
 
-// 1D b/c wants to be true initially 
+
       if (false) {
         alert("the neighborhood");
       }
       else {
         alert("one direction");
       }
+        // Booleans are always expected to be true unless there is an unmet condition
+          // Here the only condition is "false" but the default boolean w/o conditions is true, so the else statement will be executed 
+              // No reason to run the if statement b/c nothing is automatically false w/o conditions to make something false 
+                // 1D b/c wants to be true initially 
+
 
       if (("5" + "5") === "55") {
         alert("tofu");
@@ -60,8 +78,10 @@
       else {
         alert("soybean");
       }
-// it's tofu b/c putting the number 5 next to itself twice over == 55. 2 string value 5's =55 
-// they're strings not integers
+          // "5" is a string so "5"+"5" concatenates 2 strings, making the result 55 instead of equating 2 integers to 10 
+          // It's tofu b/c putting the number 5 next to itself twice over == 55. 2 string value 5's =55 
+              // They're strings not integers
+
 
       if ((6 + "5") === "65") {
         alert("richard");
@@ -69,7 +89,8 @@
       else {
         alert("branson");
       }
-// it does = 65 bc one is an integer and one is a string, respectively. aka Richard 
+          // It does = 65 bc one is an integer and one is a string, respectively. aka Richard 
+            // Concatenating a string and an integer just puts 2 values together, zero equations involved 
 
     </script>
 
