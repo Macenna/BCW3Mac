@@ -15,12 +15,14 @@
     var drinks = ["Coke", "Pepsi", "Water", "Orange Juice"];
     // ...
 
+      // This console logs the indexes in the array one by one as they're typed in the variable declaration statement 
     console.log("First statement");
     console.log(drinks[0]);
     console.log(drinks[1]);
     console.log(drinks[2]);
     console.log(drinks[3]);
 
+      // This console logs each index of the array, in all caps 
     console.log("TO CAPITAL LETTERS");
     console.log(drinks[0].toUpperCase());
     console.log(drinks[1].toUpperCase());
@@ -28,20 +30,21 @@
     console.log(drinks[3].toUpperCase());
 
     // Then modify each element of the array (individually) to make them lowercase
-    // ...
+    // This calls the toLowerCase method for each index in the array 
     console.log("to lowercase letters");
     console.log(drinks[0].toLowerCase());
     console.log(drinks[1].toLowerCase());
     console.log(drinks[2].toLowerCase());
     console.log(drinks[3].toLowerCase());
 
-    // CODE GOES HERE
 
+      // Here, these two index values are redeclared as different drinks than they were before like 43 & 44
     drinks[0] = "Ginger Ale"
     drinks[1] = "hi-c"
 
-    // ...
 
+      // This console logs each index of the array, but drinks 0 & 1 have been redeclared w/ new values 
+        // This does not change the values of the array for indexes 0 & 1 prior to lines 42 & 43 b/c of the way the code is executed 
     console.log("Second statement");
     console.log(drinks[0]);
     console.log(drinks[1]);
