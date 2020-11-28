@@ -8,12 +8,18 @@
     <script type="text/javascript">
       // Loop 10 times
       for (var i = 0; i < 10; i++) {
+        
         // Generate a random decimal number between 0 and 1
-        var num = Math.random();
+        // Math.floor will round down, meaning we would get a number between 0 and 9, so we'll always add 1 to bump it up.
+        var num = Math.floor(Math.random() * 10) + 1;
+          // (Math.random()*10) => allows Math.random to generate a random number between 1 & 10
+          // Math.floor()+1 => allows Math.floor to round the randomly generated values all the way to the maximum integer specified b/c o.w. it would round down to one integer less than specified
+          // In this for loop, the condition defined runs the loop 10 times, generating 10 random values between 1 & 10, w/o decimals 
 
         // Display in console
         console.log(num);
       }
+
     </script>
   </body>
 </html>
