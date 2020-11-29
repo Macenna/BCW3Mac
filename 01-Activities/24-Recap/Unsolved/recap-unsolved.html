@@ -23,16 +23,44 @@
 
 
       // How do we print out every single student in Row 1?
+      console.log(studentsRow1);
 
 
       // How do we print out every student in Row 2 whose first name begins with J?
+      for (var index = 0; index < studentsRow2.length; index++) {
+            // for the variable, starting at index 0, for as long as the index value is less than the array length, increment positively increases through the array index
+                // index < studentsRow2.length -> index value is always one less than the array length b/c index begins valued at 0 and length is measured beginning at 1
+            
+            // if statement conditioning first character in each index beginning w/ a 'J', console log the value of that array index 
+        if (studentsRow2[index].charAt(0) === "J" ) {
+          console.log(studentsRow2[index]);
+        }
+      }
+                // if statement conditions written out:
+          // studentsRow2[index] -> if the called on array [called on by each index's value]
+          // .charAt(0) -> at the character's value at index 0
+          // === -> equal value & equal type 
+          // "J" -> String value capital letter J 
+                // Condition then executes:
+          // The index's value from the array studentsRow2 is console logged 
+            // aka the name(s)(strings) that start w/ (are at index 0) the string value J 
+              // In more complex terms: The string value of the array's value at index 0 for each indexed string w/in the array 
+
 
 
       // Using the entireClass array, how do we access the second student in row 3?
-
+        //console.log(entireClass[2].indexOf(studentsRow3[1]));
+            // This prints "1" to the console 
+        //console.log(Array.prototype.indexOf.call(entireClass.indexOf(2), index[1]));
+            // This prints "-1" to the console 
+        //console.log(entireClass[2].valueOf(1));
+            // This prints the entire value list of row 3 - not just the second student 
+      console.log(entireClass [2] [1]);
+            // This flips through to the second index's value (which is an entire array) then to the child array's value at index 1
+              // Just console logs the name Stephen 
 
       // Using the entireClass array, how do we access the third student in row 2?
-
+      console.log(entireClass [1] [2]);
 
     </script>
     
