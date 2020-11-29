@@ -8,26 +8,36 @@
 
     <script type="text/javascript">
 
-      // ????
+      // 2 variables are set, 
+        // var favTVshows is an empty array 
+        // var tvShow has no defined value yet
       var favTVshows = [];
       var tvShow;
 
-      // For Loop Elements Repeats ??? Times
+      // For Loop Elements Repeats 3 Times
+        // for loop inital expression is i = 1 -> meaning the for loop condition satisfies 1 index value
+          // i < 4 -> means the condition is set to satisfy 3 loops b/c 4-1=3, so it'll loop through 3 indexes in the array 
       for (var i = 1; i < 4; i++) {
 
-        // ????
+        // The tvShow variable's value is now defined as the answer to a prompt 
+          // + i + => add the iterators value (which increases by 1 each time it loops) to the prompt 
+            // Making the prompt question match the value output 
+              // So, first time it asks, the answer becomes the first value to the tvShow var, and so on (until asked 3 times b/c condition above)
         tvShow = prompt("What's your #" + i + " favorite TV show?");
 
-        // ????
+        // This .push function makes the answer to the prompt an added value to the array 
+        // B/c i < 4, this will add 3 index values to the favTVshows array, then the condition is met and for loop is done after 3 executions 
         favTVshows.push(tvShow);
       }
 
-      // ????
+      // for the variable, starting at index 0, until the last index of favTVshows (1 less than the length), iterate through the array values (forward)
       for (var j = 0; j < favTVshows.length; j++) {
 
-        // ???
+        // For each iteration, alert the user their favorite tv show for each index - from the favTvshows array 
         alert(favTVshows[j]);
       }
+        // This for loop's conditions are met once all 3 of the array values have alerted the user in the browser 
+          // Just displays what user entered in 3 separate alerts, in the same order user entered the information 
 
     </script>
 
