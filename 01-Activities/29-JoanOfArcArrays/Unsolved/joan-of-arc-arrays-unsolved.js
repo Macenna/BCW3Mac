@@ -9,3 +9,13 @@ var joanOfArcInfoValues = [
   "Took an arrow to the shoulder and a crossbow bolt to the thigh while trying to liberate Paris.",
   "Stands for French unity and nationalism."
 ];
+
+  // This variable's value is the same as the first array's index value 0 
+var input = "Real Name";
+
+// How do I use input to get "Jehanne la Pucelle."
+var index = joanOfArcInfoParts.indexOf(input);
+var valuesIndex = joanOfArcInfoValues[index];
+
+console.log(index);
+console.log(valuesIndex);
