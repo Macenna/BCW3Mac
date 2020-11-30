@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity 33</title>
+</head>
+<body>
+    
+    <script type="text/javascript">
+    
+    var questions = [
+        {q:"There are 12 months in a year.", a: "t"},
+        {q:"There are 365 days in a year.", a: "t"},
+        {q:"The first color in a rainbow is not red.", a: "f"},
+        {q:"The first day of the week is Sunday.", a: "t"},
+        {q:"There are 31 days in the month of December.", a: "t"},
+        {q:"The color of the sky is blue.", a: "t"},
+        {q:"The capital of the United States is not on the mainland.", a: "f"},
+        {q:"The capital of France is not Paris.", a: "f"},
+        {q:"The capital of Australia is Canberra.", a: "t"},
+        {q:"The capital of New Zealand is Wellington.", a: "t"}
+    ];
+
+    // Start the game with a score of 0.
+    var score = 0;
+
+    // for loop over every question object
+    for (var i = 0; i < questions.length; i++) {
+      // Display current question to user and ask OK/Cancel
+      var answer = confirm(questions[i].q);
+
+      // Compare answers
+      if ((answer === true && questions[i].a === "t") ||
+        (answer === false && questions[i].a === "f")) {
+        // Increase score
+        score++;
+        alert("Correct!");
+      }
+      else {
+        alert("Wrong!");
+      }
+    };
+
+    // Show total at end
+    alert("You got " + score + "/" + questions.length);
+
+    </script>
+
+</body>
+</html>
