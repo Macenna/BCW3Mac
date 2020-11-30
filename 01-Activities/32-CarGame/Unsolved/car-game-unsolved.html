@@ -10,6 +10,7 @@
 
       // VARIABLES
       // ==========================================================================
+      // letter var is undefined b/c as user plays the game, the value of the var changes based on the credentials 
       var letter;
 
       var car = {
@@ -25,7 +26,8 @@
           this.mileage = this.mileage + 8;
 
           alert("New mileage: " + this.mileage);
-        },
+        },    // This function adds 8 miles to the total mileage each time the user enters "d" into the browser prompt
+              // Then, alerts user w/ the new mileage total value (the new total is also console logged in another function below) 
 
         driveAroundWorld: function() {
           alert("Old Mileage: " + this.mileage);
@@ -36,36 +38,52 @@
           alert("Car needs a tuneup!");
 
           this.isWorking = false;
-        },
+        },    // This function alerts the user 3 times
+                // First, the mileage before driving around the world (old mileage)
+                // Then, there's an equation executed that adds 24000 miles to the mileage (aka the act of driving those 24000 miles)
+                // Second, alerts the user w/ the new calculated mileage 
+                // Third, alerts user that the car has added so many miles to the point that it needs a tune-up
+                // Then, this.isWorking property value changes from true to false, making the car no longer work
+                    // This makes it so that the user can no longer add milage to the car until the tuneup function is executed 
 
         getTuneUp: function() {
           alert("Car is ready to go!");
           this.isWorking = true;
-        },
+        },    // This function changes the isWorking object property back from false to true, allowing the game to continue 
+              // Theoretically, this function exectution represents the car getting a tuneup 
 
         honk: function() {
           alert("Honk! Honk!");
-        }
+        }     // This function just displays an alert 
       };
+          // This object contains 5 properties & 4 functions 
+              // The 4 functions represent processes that the car must be able to execute in order to work like a real car, metaphorically 
+              // In order to play the car game, the car must be able to do these things inside of the object {} 
+                // b/c the execution of these functions is what makes it a working car to the game parameters 
+
 
       // FUNCTIONS
       // ==============================================================================
 
       // TO DO: Log all of our car's current stats to the console.
       function reWriteStats() {
-        console.log{"Make: " + car.make};
-        console.log{"Model: " + car.model};
-        console.log["Color: " + car.color];
-        console.log{"Milage: " + car.mileage};
-        console.log{"Is Working: " + car.isWorking};
+        console.log("Make: " + car.make);
+        console.log("Model: " + car.model);
+        console.log("Color: " + car.color);
+        console.log("Milage: " + car.mileage);
+        console.log("Is Working: " + car.isWorking);
         console.log("------------------------------");
-      }
+      };
+          // This function updates the statisitics (mostly the mileage & isWorking) to the console log so the developer can see how the user is playing the game 
+              // Calling the object.property outside of the object {} in a separate function allows the stats to update each round 
+
 
       // MAIN PROCESS
       // ==============================================================================
 
       // A while loop makes more sense here than a for loop, because we don't know how long the user will want to play the game
       // This loop will end when the user presses Cancel, thus setting the letter variable to "null"
+        // While loop is set to execute when the letter variable up top is valued to be undefined
       while (letter !== null) {
         // Prompt user to input a letter
         letter = prompt("Type 'h' to honk, 'd' to drive to work, 'w' to drive around the world, or 't' to get a tuneup.");
@@ -89,6 +107,13 @@
           reWriteStats();
         }
       }
+          // In the while loop, each if/else if statement calls a function from w/in the object - mutating the values w/in the object 
+            // Then, after calling a function from w/in the object, calls the reWriteStats frunction from outside the object parameters, which updates the object values to the console
+            // && operator => logical operator used to determine the logic between variables or values 
+                // && = true -> then if statement is executed, if not, then both conditions are not satisfied & if statement will not run 
+                // isWorking is set to true until the around the world function executes, then isWorking is set to false until tuneup function is executed 
+          // This while loop will run every round of the game until user exits the browser 
+            // mileage property will continue increasing as game runs repeatedly 
 
     </script>
 
