@@ -28,7 +28,7 @@
       // The function should multiply the arguments, and log the result to the console.
 
        function multiplier(x,y,z) {
-         return x * y * z ;
+         console.log( x * y * z );
        }
 
        multiplier(2,2,4)
@@ -37,21 +37,34 @@
       // "isString" determines if all three arguments are strings and logs an appropriate response to the console.
 
        function isString (x, y, z) {
-         console.log(typeof val === "string")
+         console.log(typeof val === "string");
        }
 
       // Create a Function called "vowelChecker" that takes in a single argument (x).
-      // "vowlChecker" logs whether or not the input is a vowel.
+      // "vowelChecker" logs whether or not the input is a vowel.
        function vowelChecker (x) {
-         console.log(vowel)
+         if (x === "a" || x === "e" || x === "i" || x === "o" || x === "u") {
+          console.log(x + " is a vowel");
+         }
+         else {
+           console.log(x + " is not a vowel");
+         }
        }
+
+       vowelChecker("a");
+       vowelChecker("b");
+
 
       // BONUS
       // Creates a version of "adder" that returns its result. Function is called "adderReturn".
-
+       function adderReturn (x, y, z) {
+          return x + y + z;
+       }
 
       // Creates a version of "multiplier" that returns its result. Function is called "multiplierReturn".
-
+      function multiplierReturn(x,y,z) {
+         return x * y * z ;
+       }
 
       // FUNCTION EXECUTION
       // ================================================================================
@@ -61,36 +74,44 @@
 
       // Call the adder function here.
 
-
+      adder(3, 4, 5);
       console.log("-------------------");
 
 
       // Call the multiplier function here.
 
-
+      multiplier(3, 4, 5);
       console.log("-------------------");
 
 
       // Call the isString function here.
 
-
+      isString("pspspsp", "yarn", "yawn");
       console.log("-------------------");
 
 
       // Call the vowelChecker function here.
 
-
+      vowelChecker("d")
       console.log("-------------------");
 
 
       // BONUS
       // Call the adderReturn function here and set it equal to a variable. Then log that variable to the console.
 
-
+      var adderReturnVar = adderReturn(5, 6, 7);
+      console.log(adderReturnVar);
       console.log("-------------------");
 
 
       // Call the multiplierReturn function here and set it equal to a variable. Then log that variable to the console.
+
+      var multiplierReturnVar = multiplierReturn(5, 6, 7);
+      console.log(multiplierReturnVar);
+
+       // The variables set to equal the function w/ specific arguments console the value after being passed through the function 
+        // The result of the equation is what is console logged to the browser 
+          // var has 2 values, an argument before & a result after being passed through the function 
 
     </script>
 
